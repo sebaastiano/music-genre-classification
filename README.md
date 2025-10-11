@@ -30,8 +30,8 @@ The model uses the following features for prediction:
 
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/music_genre_classification.git
-cd music_genre_classification
+git clone https://github.com/sebaleye/music-genre-classification.git
+cd music-genre-classification
 ```
 
 Install dependencies:
