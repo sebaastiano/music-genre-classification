@@ -10,21 +10,21 @@ This project was developed for the final exam of the Machine Learning course in 
 
 The model uses the following features for prediction:
 
-- **artists**: Artist names who performed the track
-- **popularity**: Track popularity (0-100)
-- **explicit**: Whether the track has explicit lyrics
-- **danceability**: Suitability for dancing based on musical elements
-- **energy**: Perceptual measure of intensity and activity
-- **key**: Musical key of the track
-- **loudness**: Overall loudness in decibels (dB)
-- **mode**: Modality (major or minor)
-- **speechiness**: Presence of spoken words
-- **acousticness**: Confidence measure of acoustic content
-- **instrumentalness**: Prediction of vocal absence
-- **liveness**: Presence of audience in recording
-- **valence**: Musical positiveness
-- **tempo**: Estimated tempo in BPM
-- **time_signature**: Estimated time signature (3/4 to 7/4)
+- **artists**: artist names who performed the track
+- **popularity**: track popularity (0-100)
+- **explicit**: whether the track has explicit lyrics
+- **danceability**: suitability for dancing based on musical elements
+- **energy**: perceptual measure of intensity and activity
+- **key**: musical key of the track
+- **loudness**: overall loudness in decibels (dB)
+- **mode**: modality (major or minor)
+- **speechiness**: presence of spoken words
+- **acousticness**: confidence measure of acoustic content
+- **instrumentalness**: prediction of vocal absence
+- **liveness**: presence of audience in recording
+- **valence**: musical positiveness
+- **tempo**: estimated tempo in BPM
+- **time_signature**: estimated time signature (3/4 to 7/4)
 
 ## Installation
 
@@ -48,7 +48,7 @@ Place the `dataset.csv` file in the `data/` directory.
 
 ## Usage
 
-### Training the Model
+### Training the model
 
 Run the main training script:
 
@@ -65,7 +65,7 @@ This will:
 - fine-tune the best model
 - evaluate on the test set
 
-### Using the Jupyter Notebook
+### Using the Jupyter notebook
 
 For interactive exploration and visualization:
 
@@ -73,9 +73,9 @@ For interactive exploration and visualization:
 jupyter notebook notebooks/genre_ml.ipynb
 ```
 
-### Custom Training
+### Custom training
 
-You can modify the training parameters in `train.py`:
+it is possible to modify the training parameters in `train.py`:
 
 ```python
 df = create_sampled_dataset(
@@ -86,7 +86,7 @@ df = create_sampled_dataset(
 )
 ```
 
-## Model Performance
+## Model performance
 
 The best performing model achieved:
 - **Test Accuracy**: ~92.65%
@@ -95,7 +95,7 @@ The best performing model achieved:
 The model uses:
 - **Classifier**: One-vs-Rest LinearSVC
 - **Preprocessing**: StandardScaler, MinMaxScaler, One-Hot Encoding
-- **No dimensionality reduction** (data naturally low-dimensional)
+- **No dimensionality reduction**
 - **No sampling** (dataset is balanced by construction)
 
 ## Requirements
@@ -116,12 +116,8 @@ See `requirements.txt` for specific versions.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+MIT License. See LICENSE file for details.
 
 ## Acknowledgments
 
 Dataset: [Spotify Tracks Dataset](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset) by Maharshi Pandya
-
-## Contact
-
-For questions or feedback, please open an issue on GitHub.
