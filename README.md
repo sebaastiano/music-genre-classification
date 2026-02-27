@@ -30,7 +30,7 @@ The model uses the following features for prediction:
 
 Clone the repository:
 ```bash
-git clone https://github.com/sebaleye/music-genre-classification.git
+git clone https://github.com/sebaastiano/music-genre-classification.git
 cd music-genre-classification
 ```
 
